@@ -22,6 +22,7 @@ class _DemoState extends State<Demo> {
     });
 
       for (int i = 0; i < food.length; i++) {
+        print(food.toString());
         if (category.contains(food[i]["category"]) == false)
           category.add(food[i]["category"].toString());
         print(category.toString()+"dad");
