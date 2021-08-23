@@ -12,6 +12,12 @@ class CategoryList extends StatefulWidget {
 
 class _CategoryListState extends State<CategoryList> {
   @override
+  void initState() {
+    // TODO: implement initState
+    print(widget.category);
+    super.initState();
+  }
+  @override
   Widget build(BuildContext context) {
     return Container(
       child: Column(

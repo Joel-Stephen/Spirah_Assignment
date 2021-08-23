@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:app_template/src/models/food_model.dart';
 import 'package:app_template/src/utils/utils.dart';
@@ -22,10 +23,10 @@ class _DemoState extends State<Demo> {
     });
 
       for (int i = 0; i < food.length; i++) {
-        print(food.toString());
+        // print(food.toString());
         if (category.contains(food[i]["category"]) == false)
           category.add(food[i]["category"].toString());
-        print(category.toString()+"dad");
+        // print(category.toString());
       }
       return 'success';
     }
